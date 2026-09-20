@@ -1,0 +1,24 @@
+---
+import DashboardLayout from '../../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout title="Portal Settings | Verdant Home Care">
+  <div class="space-y-8 max-w-xl">
+    <div class="space-y-2">
+      <h1 class="text-3xl font-black tracking-tight text-white">Account Settings</h1>
+      <p class="text-zinc-400">Manage your caregiver profile preferences and notification channels.</p>
+    </div>
+
+    <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl space-y-6">
+      <div class="space-y-2">
+        <label class="block text-sm font-medium text-zinc-300">Display Name</label>
+        <input type="text" value="Alice Vance, CNA" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+      </div>
+      <div class="space-y-2">
+        <label class="block text-sm font-medium text-zinc-300">Notification Email</label>
+        <input type="email" value="alice@verdanthomecare.mock" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500">
+      </div>
+      <button class="bg-blue-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-blue-500 transition-all">Save Changes</button>
+    </div>
+  </div>
+</DashboardLayout>
